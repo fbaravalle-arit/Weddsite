@@ -1,0 +1,18 @@
+# Local-only planning docs (excluded by repo owner choice — build.py depends on STITCH_SOURCE_CODE.md, so rebuilding requires keeping it locally)
+DESIGN_WEDDING.md
+STITCH_SOURCE_CODE.md
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
