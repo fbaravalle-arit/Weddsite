@@ -1,0 +1,81 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: ['./src/**/*.{ts,tsx,mdx}'],
+  theme: {
+    extend: {
+      colors: {
+        'gold-light': '#E8D5A3',
+        gold: '#C9A84C',
+        'gold-dark': '#8B6914',
+        'terracotta-light': '#D4806A',
+        'terracotta-dark': '#8B3A1E',
+        'forest-light': '#74C69D',
+        'forest-dark': '#1B4332',
+        'bg-primary': '#F5F1E8',
+        'bg-secondary': '#EDE9DF',
+        'bg-card': '#FAF8F3',
+        'bg-dark': '#1C1814',
+        'text-primary': '#2E2A24',
+        'text-secondary': '#5C5650',
+        'text-muted': '#9A958E',
+        'text-inverse': '#F5F1E8',
+        border: '#D4CFC6',
+        'border-strong': '#B0A898',
+        primary: '#B85C38',
+        secondary: '#4E6074',
+        tertiary: '#2B694E',
+        background: '#FDF9F0',
+        surface: '#FDF9F0',
+        'surface-container': '#F1EEE5',
+        'surface-container-low': '#F7F3EA',
+      },
+      borderRadius: {
+        DEFAULT: '0.125rem',
+        lg: '0.25rem',
+        xl: '0.5rem',
+        full: '0.75rem',
+      },
+      spacing: {
+        'space-1': '0.25rem',
+        'space-2': '0.5rem',
+        'space-4': '1rem',
+        'space-8': '3rem',
+        'space-16': '8rem',
+        gutter: 'clamp(1.5rem, 4vw, 3rem)',
+        'section-gap': 'clamp(4rem, 8vw, 8rem)',
+      },
+      fontFamily: {
+        handwritten: ['var(--font-handwritten)', 'cursive'],
+        'hero-names': ['var(--font-serif)', 'serif'],
+        'section-h2': ['var(--font-serif)', 'serif'],
+        'subheading-h3': ['var(--font-display)', 'serif'],
+        caption: ['var(--font-sans)', 'sans-serif'],
+        'body-base': ['var(--font-sans)', 'sans-serif'],
+        'body-md': ['var(--font-sans)', 'sans-serif'],
+        'bilingual-it': ['var(--font-sans)', 'sans-serif'],
+        'bilingual-es': ['var(--font-sans)', 'sans-serif'],
+      },
+      fontSize: {
+        handwritten: ['1.5rem', { fontWeight: '400' }],
+        'hero-names': [
+          'clamp(3.5rem, 8vw, 7rem)',
+          { lineHeight: '1.1', letterSpacing: '0.12em', fontWeight: '300' },
+        ],
+        'section-h2': ['2.5rem', { lineHeight: '1.2', fontWeight: '400' }],
+        'subheading-h3': [
+          '1.375rem',
+          { letterSpacing: '0.08em', fontWeight: '400' },
+        ],
+        caption: ['0.875rem', { letterSpacing: '0.04em', fontWeight: '300' }],
+        'body-base': ['1rem', { lineHeight: '1.75', fontWeight: '400' }],
+        'body-md': ['1.125rem', { lineHeight: '1.75', fontWeight: '300' }],
+        'bilingual-it': ['1rem', { fontWeight: '500' }],
+        'bilingual-es': ['1rem', { fontWeight: '300' }],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;

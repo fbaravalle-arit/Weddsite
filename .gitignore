@@ -1,18 +1,33 @@
-# Local-only planning docs (excluded by repo owner choice — build.py depends on STITCH_SOURCE_CODE.md, so rebuilding requires keeping it locally)
-DESIGN_WEDDING.md
-STITCH_SOURCE_CODE.md
+# dependencies
+node_modules/
+.pnp
+.pnp.js
 
-# OS / editor
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# misc
 .DS_Store
+*.pem
+*.log
 *.swp
 .vscode/
 .idea/
 
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Logs
-*.log
+# env files
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
