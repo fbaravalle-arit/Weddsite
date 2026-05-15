@@ -13,4 +13,6 @@ export const SITE = {
     address: 'Piazza Maggiore 6, 40124 Bologna, Italia',
   },
   rsvpDeadline: '2026-03-15',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://weddsite.vercel.app',
+  ogImage: '/images/11.jpg',
 } as const;

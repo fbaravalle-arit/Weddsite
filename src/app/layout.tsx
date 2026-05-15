@@ -27,17 +27,41 @@ const handwritten = Caveat({
   display: 'swap',
 });
 
+const DEFAULT_DESCRIPTION =
+  'Sito ufficiale del matrimonio di Elena e Federico: invito alle nostre tre celebrazioni a Bologna (2026), in Argentina (2027) e in Italia (2028). RSVP, programma e dettagli pratici.';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.couple} — ${SITE.tagline.it} · ${SITE.tagline.es}`,
+    default: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
     template: `%s — ${SITE.couple}`,
   },
-  description: `${SITE.tagline.it}. ${SITE.tagline.es}.`,
+  description: DEFAULT_DESCRIPTION,
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'it_IT',
     alternateLocale: ['es_AR'],
-    title: `${SITE.couple} — ${SITE.tagline.it} · ${SITE.tagline.es}`,
+    title: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE.url,
+    siteName: SITE.couple,
+    images: [
+      {
+        url: SITE.ogImage,
+        width: 1600,
+        height: 1067,
+        alt: `${SITE.couple} — ${SITE.tagline.it} · ${SITE.tagline.es}`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
+    description: DEFAULT_DESCRIPTION,
+    images: [SITE.ogImage],
   },
 };
 

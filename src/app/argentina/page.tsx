@@ -4,9 +4,10 @@ import { PageHeader } from '@/components/PageHeader';
 import { Reveal } from '@/components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'Argentina · 2027',
+  title: 'Argentina · Buenos Aires 2027 — guida pratica per gli ospiti',
   description:
-    'Festa in Argentina, 2027 — viaggio, alloggio e cosa vedere. Fiesta en Argentina, 2027 — viaje, alojamiento y qué ver.',
+    "Festa di matrimonio in Argentina nel 2027: come arrivare a Buenos Aires da Roma o Milano, dove dormire tra Palermo e Recoleta, e i nostri consigli per scoprire la città. Fiesta de casamiento en Argentina 2027 — guía para los invitados.",
+  alternates: { canonical: '/argentina' },
 };
 
 export default function ArgentinaPage() {
@@ -162,6 +163,7 @@ function NeighborhoodCard({
           alt={`Vista di ${title}.`}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
+          quality={70}
           className="object-cover"
         />
       </div>

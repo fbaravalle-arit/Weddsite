@@ -4,9 +4,10 @@ import { Gifts } from '@/sections/regalo/Gifts';
 import { SITE } from '@/content/site';
 
 export const metadata: Metadata = {
-  title: 'Regalo',
+  title: 'Regalo · Regalo de boda — IBAN, alias bancario e contributo online',
   description:
-    'Le opzioni per un regalo se desideri farci uno. Las opciones para un regalo si querés hacernos uno.',
+    "La vostra presenza è il regalo più grande, ma se desiderate farci un dono trovate qui le opzioni — bonifico bancario italiano, transferencia argentina con CBU/alias, o contributo online con carta di credito. Su presencia es el regalo más grande.",
+  alternates: { canonical: '/regalo' },
 };
 
 export default function RegaloPage() {

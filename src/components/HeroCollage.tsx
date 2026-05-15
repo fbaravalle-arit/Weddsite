@@ -28,8 +28,8 @@ const TILES: ReadonlyArray<{
     priority: true,
     caption: { text: 'Bologna · 2024', corner: 'bl' },
   },
-  { src: '/images/4.jpg',  alt: 'Una passeggiata insieme.',         area: 'b' },
-  { src: '/images/17.jpg', alt: 'Dettaglio di una giornata estiva.', area: 'c' },
+  { src: '/images/4.jpg',  alt: 'Una passeggiata insieme.',          area: 'b', priority: true },
+  { src: '/images/17.jpg', alt: 'Dettaglio di una giornata estiva.', area: 'c', priority: true },
   {
     src: '/images/13.jpg',
     alt: 'Un momento condiviso in Argentina.',
@@ -63,7 +63,8 @@ export function HeroCollage() {
             src={t.src}
             alt={t.alt}
             fill
-            sizes="(min-width: 768px) 50vw, 100vw"
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            quality={70}
             priority={t.priority}
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />

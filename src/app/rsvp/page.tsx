@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { RsvpForm } from '@/sections/rsvp/RsvpForm';
 
 export const metadata: Metadata = {
-  title: 'RSVP',
-  description: 'Conferma la tua presenza. Confirmá tu presencia.',
+  title: 'RSVP — Conferma la tua presenza al matrimonio di Elena & Federico',
+  description:
+    "Conferma la tua partecipazione al matrimonio di Elena e Federico — Bologna 2026, Argentina 2027, Italia 2028. Compila il modulo entro il 15 marzo 2026 e segnalaci eventuali restrizioni alimentari o richieste musicali. Confirmá tu presencia.",
+  alternates: { canonical: '/rsvp' },
 };
 
 export default function RsvpPage() {

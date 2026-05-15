@@ -5,9 +5,11 @@ import { Timeline } from '@/sections/programma/Timeline';
 import { Logistics } from '@/sections/programma/Logistics';
 
 export const metadata: Metadata = {
-  title: 'Programma · Programa',
+  title: 'Programma · Programa — 29 maggio 2026, Bologna',
   description:
-    'Il programma del 29 maggio 2026 a Bologna. El programa del 29 de mayo de 2026 en Bolonia.',
+    "Programma dettagliato della giornata del 29 maggio 2026 a Bologna: arrivo degli ospiti, cerimonia civile in Sala Rossa, aperitivo in Piazza Maggiore e pranzo. Indirizzo, orari e indicazioni logistiche per gli invitati.",
+  alternates: { canonical: '/programma' },
+  robots: { index: false, follow: false },
 };
 
 export default function ProgrammaPage() {

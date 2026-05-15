@@ -4,9 +4,10 @@ import { Reveal } from '@/components/Reveal';
 import { FaqAccordion } from '@/sections/faq/FaqAccordion';
 
 export const metadata: Metadata = {
-  title: 'FAQ',
+  title: 'FAQ — Dress code, accompagnatori, RSVP e dettagli pratici',
   description:
-    'Domande frequenti sulle nostre celebrazioni. Preguntas frecuentes sobre nuestras celebraciones.',
+    "Risposte alle domande più frequenti dei nostri ospiti: cosa indossare a Bologna e in Argentina, se è possibile portare un accompagnatore, se i bambini sono invitati e quando confermare l'RSVP. Preguntas frecuentes sobre nuestras celebraciones.",
+  alternates: { canonical: '/faq' },
 };
 
 export default function FaqPage() {
