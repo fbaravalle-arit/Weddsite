@@ -53,3 +53,11 @@ When  writing in the following programming languges, follow these guidelines:
 ### CHECKS:
 - Run a check with this claude skill : npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
 - Run a check with this claude skill : https://www.skills.sh/anthropics/skills/frontend-design
+
+
+### TO FIX
+1) No RSVP emphasis in navigation
+The RSVP link in the nav bar looks identical to other links. Since RSVP is the primary action guests need to take, consider visually differentiating it — a button style or contrasting color would draw the eye and boost response rates.
+2) All a caption for all pictures
+3)
+
