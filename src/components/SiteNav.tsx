@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NAV_ITEMS } from '@/content/nav';
@@ -15,13 +16,16 @@ export function SiteNav() {
   const pathname = usePathname();
   return (
     <>
-      <header className="sticky top-0 z-40 hidden w-full flex-col items-center justify-center bg-background/90 px-gutter py-space-4 backdrop-blur-md md:flex">
-        <p
-          className="mb-space-4 text-center font-hero-names text-hero-names tracking-widest text-text-primary"
-          role="presentation"
-        >
-          {SITE.couple}
-        </p>
+      <header className="sticky top-0 z-40 hidden w-full flex-col items-center justify-center bg-white/90 px-gutter py-space-4 backdrop-blur-md md:flex">
+        <Image
+          src="/images/A.png"
+          alt={SITE.couple}
+          width={1040}
+          height={186}
+          priority
+          className="mb-space-4 h-16 w-auto"
+        />
+
         <nav aria-label="Principale · Principal">
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 font-body-base">
             {NAV_ITEMS.map((item) => {
@@ -47,7 +51,7 @@ export function SiteNav() {
         </nav>
       </header>
 
-      <div className="sticky top-0 z-40 flex w-full items-center justify-between bg-background/90 px-gutter py-space-4 backdrop-blur-md md:hidden">
+      <div className="sticky top-0 z-40 flex w-full items-center justify-between bg-white/90 px-gutter py-space-4 backdrop-blur-md md:hidden">
         <p className="font-hero-names text-2xl tracking-widest" role="presentation">
           E &amp; F
         </p>

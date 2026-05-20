@@ -23,22 +23,22 @@ const TILES: ReadonlyArray<{
 }> = [
   {
     src: '/images/11.jpg',
-    alt: 'Elena e Federico, ritratto a Bologna.',
+    alt: 'Isola Bella.',
     area: 'a',
     priority: true,
-    caption: { text: 'Bologna · 2024', corner: 'bl' },
+    //caption: { text: 'Isola Bella', corner: 'bl' },
   },
-  { src: '/images/4.jpg',  alt: 'Una passeggiata insieme.',          area: 'b', priority: true },
-  { src: '/images/17.jpg', alt: 'Dettaglio di una giornata estiva.', area: 'c', priority: true },
+  { src: '/images/7.jpg',  alt: 'El Calafate',          area: 'b', priority: true },
+  { src: '/images/4.jpg', alt: 'Riga', area: 'c', priority: true },
   {
     src: '/images/13.jpg',
-    alt: 'Un momento condiviso in Argentina.',
+    alt: 'Singapore',
     area: 'd',
-    caption: { text: 'Santa Fe · 2023', corner: 'br' },
+    //caption: { text: 'Singapore', corner: 'br' },
   },
-  { src: '/images/21.jpeg', alt: 'Un brindisi tra amici.', area: 'e' },
-  { src: '/images/24.jpeg', alt: 'Tavolata di famiglia.',  area: 'f' },
-  { src: '/images/25.jpeg', alt: 'Architettura di Bologna.', area: 'g' },
+  { src: '/images/10.jpg', alt: 'Scala', area: 'e' },
+  { src: '/images/1.jpg', alt: 'Empanaditas',  area: 'f' },
+  { src: '/images/28.jpg', alt: 'Trekking', area: 'g' },
 ];
 
 const cornerClass: Record<'tl' | 'tr' | 'bl' | 'br', string> = {

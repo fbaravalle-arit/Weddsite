@@ -16,22 +16,23 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="mx-auto w-full max-w-7xl space-y-section-gap px-gutter pb-section-gap pt-space-8">
+    <>
       <h1 className="sr-only">
         {SITE.couple} — {SITE.tagline.it} · {SITE.tagline.es}
       </h1>
+      <div className="mx-auto w-full max-w-7xl px-gutter pb-section-gap pt-space-2">
+        <Reveal>
+          <HeroCollage />
+        </Reveal>
 
-      <Reveal>
-        <HeroCollage />
-      </Reveal>
+        <Reveal className="mx-auto mt-space-8 max-w-5xl">
+          <Invitation />
+        </Reveal>
 
-      <Reveal className="mx-auto max-w-[600px]">
-        <Invitation />
-      </Reveal>
-
-      <Reveal className="mx-auto w-full max-w-4xl" delayMs={80}>
-        <CeremonyCard />
-      </Reveal>
-    </div>
+        <Reveal className="mx-auto mt-space-8 w-full max-w-4xl" delayMs={80}>
+          <CeremonyCard />
+        </Reveal>
+      </div>
+    </>
   );
 }

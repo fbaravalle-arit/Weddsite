@@ -4,24 +4,25 @@ export function Invitation() {
   return (
     <div className="flex flex-col items-center space-y-space-8 text-center">
       <span className="block h-px w-16 bg-gold-dark" aria-hidden="true" />
-      <div className="space-y-space-4">
-        <p className="font-bilingual-it text-bilingual-it text-text-primary">
-          Siamo felicissimi di invitarvi a celebrare con noi. Non sarà un matrimonio
-          convenzionale, ma una serie di momenti da condividere con le persone che amiamo,
-          nei luoghi che chiamiamo casa.
+      <div className="grid gap-space-8 md:grid-cols-2 md:gap-x-32 lg:gap-x-48">
+        <p className="text-justify hyphens-auto font-bilingual-it text-bilingual-it text-text-primary">
+          Non vediamo l'ora di vedervi e di celebrare insieme. Sarà un’occasione
+          per intrecciare persone, storie e culture: per farvi conoscere meglio noi,
+          le nostre radici e le persone che ci hanno accompagnato fin qui.
         </p>
         <p
           lang="es"
-          className="font-bilingual-es text-bilingual-es italic text-text-secondary"
+          className="text-justify hyphens-auto font-bilingual-it text-bilingual-it text-text-primary"
         >
-          Estamos muy felices de invitarlos a celebrar con nosotros. No será una boda
-          convencional, sino una serie de momentos para compartir con las personas que
-          amamos, en los lugares que llamamos hogar.
+          No vemos la hora de verlos y celebrar juntos. Va a ser una oportunidad para
+          unir personas, historias y culturas: para que nos conozcan más, para mostrar nuestras raíces
+          y a las personas que nos acompañaron hasta acá.
         </p>
       </div>
-      <p className="pt-space-4 font-handwritten text-handwritten text-terracotta-dark">
+      <p className="font-handwritten text-handwritten text-terracotta-dark">
         {SITE.couple}
       </p>
+      <span className="block h-px w-16 bg-gold-dark" aria-hidden="true" />
     </div>
   );
 }

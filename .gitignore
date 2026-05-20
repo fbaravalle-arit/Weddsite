@@ -18,6 +18,7 @@ dist/
 *.swp
 .vscode/
 .idea/
+.playwright-mcp
 
 # debug
 npm-debug.log*
