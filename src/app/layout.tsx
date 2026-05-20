@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'it_IT',
     alternateLocale: ['es_AR'],
-    title: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
+    title: `Elena & Federico`,
     description: DEFAULT_DESCRIPTION,
     url: SITE.url,
     siteName: SITE.couple,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
+    title: `Elena & Federico`,
     description: DEFAULT_DESCRIPTION,
     images: [SITE.ogImage],
   },
