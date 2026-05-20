@@ -16,7 +16,6 @@ export default function ArgentinaPage() {
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-section-gap px-gutter pb-section-gap pt-space-8">
       <PageHeader
         eyebrowIt="Viaggio in Argentina"
-        eyebrowEs="Viaje a Argentina"
         titleIt="Buenos Aires · 2027"
       />
 

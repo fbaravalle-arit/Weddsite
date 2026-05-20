@@ -75,11 +75,8 @@ export function MobileDrawer() {
       </button>
 
       <div className="mb-space-8 text-center">
-        <p className="mb-2 font-hero-names text-4xl tracking-widest" role="presentation">
+        <p className="font-hero-names text-4xl tracking-widest" role="presentation">
           {SITE.couple}
-        </p>
-        <p className="font-caption text-caption uppercase tracking-widest text-gold-light">
-          {SITE.tagline.it} · {SITE.tagline.es}
         </p>
       </div>
 
