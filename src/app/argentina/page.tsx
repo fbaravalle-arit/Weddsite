@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Script from 'next/script';
 import { PageHeader } from '@/components/PageHeader';
 import { Reveal } from '@/components/Reveal';
 
@@ -20,64 +21,20 @@ export default function ArgentinaPage() {
       />
 
       <Reveal className="grid grid-cols-1 gap-space-4 md:grid-cols-12">
-        <div className="rounded border border-border bg-bg-card p-space-8 shadow-sm md:col-span-8">
-          <h2 className="mb-space-4 font-subheading-h3 text-subheading-h3 text-terracotta-dark">
-            Italia &rarr; Argentina
-          </h2>
-          <div className="mb-space-4 flex flex-col items-start gap-space-4 border-b border-border/50 pb-space-4 md:flex-row md:items-center">
-            <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">
-                flight_takeoff
-              </span>
-              <div>
-                <p className="font-bilingual-it text-bilingual-it">Milano (MXP) · Roma (FCO)</p>
-                <p className="font-caption text-caption text-text-muted">
-                  Partenze principali · Salidas principales
-                </p>
-              </div>
-            </div>
-            <span className="material-symbols-outlined hidden text-border-strong md:inline-block" aria-hidden="true">
-              arrow_right_alt
-            </span>
-            <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">
-                flight_land
-              </span>
-              <div>
-                <p className="font-bilingual-it text-bilingual-it">Buenos Aires (EZE)</p>
-                <p className="font-caption text-caption text-text-muted">
-                  Aeropuerto Int. Ezeiza
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-space-4 sm:grid-cols-2">
-            <div>
-              <p className="mb-space-2 font-body-base font-medium">
-                Voli diretti · Vuelos directos
-              </p>
-              <ul className="space-y-1 font-body-base text-text-secondary">
-                <FlightLine>ITA Airways (da Roma)</FlightLine>
-                <FlightLine>Aerolíneas Argentinas</FlightLine>
-              </ul>
-              <p className="mt-1 font-caption text-caption text-text-muted">
-                Durata · Duración: ~14h
-              </p>
-            </div>
-            <div>
-              <p className="mb-space-2 font-body-base font-medium">
-                Con scalo · Con escala
-              </p>
-              <ul className="space-y-1 font-body-base text-text-secondary">
-                <FlightLine>Iberia (via Madrid)</FlightLine>
-                <FlightLine>Lufthansa (via Francoforte)</FlightLine>
-              </ul>
-              <p className="mt-1 font-caption text-caption text-text-muted">
-                Durata · Duración: ~17–20h
-              </p>
-            </div>
-          </div>
+        <div className="flex min-h-[420px] flex-col rounded border border-border bg-bg-card p-space-8 shadow-sm md:col-span-8">
+          <div
+            data-skyscanner-widget="SearchWidget"
+            data-locale="it-IT"
+            data-market="IT"
+            data-currency="EUR"
+            data-colour="FFFFFFFF"
+            className="min-h-[360px] w-full flex-1"
+          ></div>
+          <Script
+            src="https://widgets.skyscanner.net/widget-server/js/loader.js"
+            async
+            strategy="afterInteractive"
+          />
         </div>
 
         <div className="flex flex-col rounded border-l-[3px] border-terracotta-dark bg-bg-card p-space-8 shadow-sm md:col-span-4">
@@ -85,14 +42,11 @@ export default function ArgentinaPage() {
             lightbulb
           </span>
           <h2 className="mb-space-2 font-bilingual-it text-bilingual-it">
-            Consiglio · Consejo
+            Consiglio
           </h2>
           <p className="font-body-base text-text-secondary">
-            Prenotate i voli con 4–6 mesi di anticipo per le tariffe migliori.
+            Prenotate i voli con 6–8 mesi di anticipo per le tariffe migliori.
             <br />
-            <span lang="es" className="italic">
-              Reserven los vuelos con 4–6 meses de anticipación para mejores tarifas.
-            </span>
           </p>
         </div>
       </Reveal>
@@ -100,47 +54,25 @@ export default function ArgentinaPage() {
       <Reveal>
         <header className="mb-space-8 text-center">
           <h2 className="font-section-h2 text-section-h2 italic text-primary">Dove dormire</h2>
-          <p lang="es" className="font-bilingual-es text-bilingual-es italic text-text-secondary">
-            Dónde dormir
-          </p>
+  
         </header>
-        <div className="grid grid-cols-1 gap-space-8 md:grid-cols-2">
-          <NeighborhoodCard
-            image="/images/17.jpg"
-            title="Palermo"
-            descriptionIt="Quartiere vivace, ristoranti e vita notturna. Ottimo per camminare."
-            descriptionEs="Barrio vibrante, restaurantes y vida nocturna. Ideal para caminar."
-          />
+        <div className="grid grid-cols-1 gap-space-8 md:grid-cols-1">
           <NeighborhoodCard
             image="/images/20.jpeg"
-            title="Recoleta"
-            descriptionIt="Eleganza classica porteña, architettura europea, vicino al centro."
-            descriptionEs="Elegancia clásica porteña, arquitectura europea, cerca del centro."
-          />
+            title=" Palermo y Recoleta"
+            descriptionIt=" Palermo: Quartiere vivace, ristoranti e vita notturna. Ottimo per camminare. Recoleta: Eleganza classica porteña, architettura europea, vicino al centro." descriptionEs={''}          />
         </div>
       </Reveal>
 
       <Reveal className="relative overflow-hidden rounded border-[1.5px] border-terracotta-light/30 bg-bg-card p-space-8 text-center">
         <h2 className="mb-space-2 font-subheading-h3 text-subheading-h3 text-terracotta-dark">
-          I nostri preferiti · Nuestros favoritos
+          I nostri posti preferiti 
         </h2>
         <p className="mx-auto max-w-3xl font-body-md text-body-md italic text-text-secondary">
-          «Non perdetevi un caffè al Café Tortoni e una passeggiata al tramonto a Puerto
-          Madero. Per la carne, vi consigliamo Don Julio a Palermo.»
+          «Dettagli seguiranno»
         </p>
       </Reveal>
     </div>
-  );
-}
-
-function FlightLine({ children }: { children: React.ReactNode }) {
-  return (
-    <li className="flex items-center gap-2">
-      <span className="material-symbols-outlined text-sm text-gold" aria-hidden="true">
-        check_circle
-      </span>
-      {children}
-    </li>
   );
 }
 
