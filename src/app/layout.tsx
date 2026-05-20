@@ -33,7 +33,7 @@ const DEFAULT_DESCRIPTION =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `Elena & Federico — Matrimonio 2026 · Boda 2027`,
+    default: `Elena & Federico`,
     template: `%s — ${SITE.couple}`,
   },
   description: DEFAULT_DESCRIPTION,

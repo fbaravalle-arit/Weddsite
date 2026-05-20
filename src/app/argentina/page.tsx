@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/PageHeader';
 import { Reveal } from '@/components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'Argentina · Buenos Aires 2027 — guida pratica per gli ospiti',
+  title: { absolute: 'Argentina' },
   description:
     "Festa di matrimonio in Argentina nel 2027: come arrivare a Buenos Aires da Roma o Milano, dove dormire tra Palermo e Recoleta, e i nostri consigli per scoprire la città. Fiesta de casamiento en Argentina 2027 — guía para los invitados.",
   alternates: { canonical: '/argentina' },
@@ -89,7 +89,7 @@ function NeighborhoodCard({
 }) {
   return (
     <article className="flex flex-col overflow-hidden rounded border border-border bg-bg-card shadow-sm">
-      <div className="relative h-48">
+      <div className="relative h-96">
         <Image
           src={image}
           alt={`Vista di ${title}.`}
@@ -99,7 +99,7 @@ function NeighborhoodCard({
           className="object-cover"
         />
       </div>
-      <div className="flex flex-grow flex-col p-space-4">
+      <div className="flex flex-grow flex-col p-space-4 text-center">
         <h3 className="mb-1 font-subheading-h3 text-subheading-h3 text-text-primary">{title}</h3>
         <p className="flex-grow font-body-base text-body-base text-text-secondary">
           {descriptionIt}

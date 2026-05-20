@@ -6,11 +6,9 @@ import { CeremonyCard } from '@/sections/home/CeremonyCard';
 import { SITE } from '@/content/site';
 
 export const metadata: Metadata = {
-  title: {
-    absolute: 'Elena & Federico — Matrimonio Bologna 2026 · Boda Argentina 2027',
-  },
+  title: { absolute: 'Elena & Federico' },
   description:
-    "Benvenuti al matrimonio di Elena e Federico. Tre celebrazioni: cerimonia civile a Bologna il 29 maggio 2026, festa in Argentina nel 2027, anniversario in Italia nel 2028. Programma, RSVP e informazioni pratiche.",
+    "Benvenuti al matrimonio di Elena e Federico.",
   alternates: { canonical: '/' },
 };
 

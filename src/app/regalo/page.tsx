@@ -3,7 +3,7 @@ import { Reveal } from '@/components/Reveal';
 import { Gifts } from '@/sections/regalo/Gifts';
 
 export const metadata: Metadata = {
-  title: 'Regalo · Regalo de boda — IBAN, alias bancario e contributo online',
+  title: { absolute: 'Lista' },
   description:
     "La vostra presenza è il regalo più grande, ma se desiderate farci un dono trovate qui le opzioni — bonifico bancario italiano, transferencia argentina con CBU/alias, o contributo online con carta di credito. Su presencia es el regalo más grande.",
   alternates: { canonical: '/regalo' },
