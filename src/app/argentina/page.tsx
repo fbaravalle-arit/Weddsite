@@ -58,7 +58,7 @@ export default function ArgentinaPage() {
         </header>
         <div className="grid grid-cols-1 gap-space-8 md:grid-cols-1">
           <NeighborhoodCard
-            image="/images/20.jpeg"
+            image="/images/B.jpeg"
             title=" Palermo y Recoleta"
             descriptionIt=" Palermo: Quartiere vivace, ristoranti e vita notturna. Ottimo per camminare. Recoleta: Eleganza classica porteña, architettura europea, vicino al centro." descriptionEs={''}          />
         </div>
