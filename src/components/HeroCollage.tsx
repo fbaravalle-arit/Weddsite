@@ -38,7 +38,7 @@ const TILES: ReadonlyArray<{
   },
   { src: '/images/10.jpg', alt: 'Scala', area: 'e' },
   { src: '/images/1.jpg', alt: 'Empanaditas',  area: 'f' },
-  { src: '/images/28.jpg', alt: 'Trekking', area: 'g' },
+  { src: '/images/30.jpg', alt: 'Trekking', area: 'g' },
 ];
 
 const cornerClass: Record<'tl' | 'tr' | 'bl' | 'br', string> = {
